@@ -4,3 +4,66 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+  --font-weight-card-title: 700;
+  --font-weight-card-text: 400;
+  --background-color: #fff;
+  --accent-color: #000;
+  --background-image: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0 2px,
+      rgb(211 211 211 / 0) 2px 4px
+    ),
+    repeating-linear-gradient(0deg, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
+}
+:root.theme-dark {
+  --font-weight-card-title: 785;
+  --font-weight-card-text: 465;
+  --background-color: #000;
+  --accent-color: #00cc14;
+  --background-image: repeating-linear-gradient(
+      90deg,
+      #000 0 2px,
+      rgb(211 211 211 / 0) 2px 4px
+    ),
+    repeating-linear-gradient(0deg, #000 0 2px, rgb(211 211 211 / 0) 2px 4px),
+    linear-gradient(180deg, #007f0c 0%, #004306 100%);
+}
+
+:root.theme-dark .button__text::before {
+  background-color: var(--accent-color);
+}
+
+:root.theme-dark .card__buttons:hover .button__text,
+:root.theme-dark .card__like-button:hover .button__text,
+:root.theme-dark .dialog__close:hover .button__text {
+  color: var(--background-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-weight-card-title: 785;
+    --font-weight-card-text: 465;
+    --background-color: #000;
+    --accent-color: #00cc14;
+    --background-image: repeating-linear-gradient(
+        90deg,
+        #000 0 2px,
+        rgb(211 211 211 / 0) 2px 4px
+      ),
+      repeating-linear-gradient(0deg, #000 0 2px, rgb(211 211 211 / 0) 2px 4px),
+      linear-gradient(180deg, #007f0c 0%, #004306 100%);
+  }
+
+  .button__text::before {
+    background-color: var(--accent-color);
+  }
+
+  .card__buttons:hover .button__text,
+  .card__like-button:hover .button__text,
+  .dialog__close:hover .button__text {
+    color: var(--background-color);
+  }
+}
