@@ -19,8 +19,8 @@
 
   <body class="page">
     <header class="header container">
-      <h1 class="header__title">&lt;/html&gt;</h1>
-      <h2 class="header__subtitle">закрывающий тег</h2>
+      <a href="#" class="header__title">&lt;/html&gt;</a>
+      <h1 class="header__subtitle">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -49,11 +49,15 @@
     </header>
     <main class="cards">
       <section class="card container">
-        <h3 class="card__title">
+        <h2 class="card__title">
           Фритрек и нулевой спринт: Подготовка к работе
-        </h3>
+        </h2>
         <div class="card__img-container">
-          <img src="./images/card_img.jpg" alt="" class="card__img" />
+          <img
+            src="./images/card_img.jpg"
+            alt="Микроавтоубс двигается ночью по пустой дороге, изображение без фильтров"
+            class="card__img"
+          />
           <span class="card__watermark">&lt;/HTML&gt;</span>
         </div>
         <div class="card__desc">
@@ -64,13 +68,14 @@
           </p>
           <p class="card__desc-paragraph">Было классно и воодущевляюще</p>
           <div class="card__desc-buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
                 height="36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -99,16 +104,21 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
       </section>
       <section class="card container">
-        <h3 class="card__title">1 спринт: Я — чистый лист</h3>
+        <h2 class="card__title">1 спринт: Я — чистый лист</h2>
         <div class="card__img-container">
-          <img src="./images/card_img.jpg" alt="" class="card__img" />
+          <img
+            src="./images/card_img.jpg"
+            alt="Микроавтоубс двигается ночью по пустой дороге, наложен черно-белый фильтр на 80%"
+            class="card__img"
+            loading="lazy"
+          />
           <span class="card__watermark">&lt;/HTML&gt;</span>
         </div>
         <div class="card__desc">
@@ -121,13 +131,14 @@
           </p>
           <p class="card__desc-paragraph">Было легко и интересно!</p>
           <div class="card__desc-buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
                 height="36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -156,16 +167,21 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
       </section>
       <section class="card container">
-        <h3 class="card__title">1 спринт: А если не получится?</h3>
+        <h2 class="card__title">1 спринт: А если не получится?</h2>
         <div class="card__img-container">
-          <img src="./images/card_img.jpg" alt="" class="card__img" />
+          <img
+            src="./images/card_img.jpg"
+            alt="Микроавтоубс двигается ночью по пустой дороге, наложены фильтры сепия, контраст и яркость"
+            class="card__img"
+            loading="lazy"
+          />
           <span class="card__watermark">&lt;CSS&gt;</span>
         </div>
         <div class="card__desc">
@@ -178,13 +194,14 @@
             Первый проект не очень сложный, круто!
           </p>
           <div class="card__desc-buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
                 height="36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -213,16 +230,21 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
       </section>
       <section class="card container">
-        <h3 class="card__title">2 спринт: Погоня за идеалом</h3>
+        <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
         <div class="card__img-container">
-          <img src="./images/card_img.jpg" alt="" class="card__img" />
+          <img
+            src="./images/card_img.jpg"
+            alt="Микроавтоубс двигается ночью по пустой дороге, наложены фильтры изменения насыщенности и цветового рисунка изображения"
+            class="card__img"
+            loading="lazy"
+          />
           <span class="card__watermark">&lt;desigions&gt;</span>
         </div>
         <div class="card__desc">
@@ -238,13 +260,14 @@
             памагите...
           </p>
           <div class="card__desc-buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
                 height="36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -273,16 +296,21 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
       </section>
       <section class="card container">
-        <h3 class="card__title">2 спринт: О тех, кто рядом</h3>
+        <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
         <div class="card__img-container">
-          <img src="./images/card_img.jpg" alt="" class="card__img" />
+          <img
+            src="./images/card_img.jpg"
+            alt="Микроавтоубс двигается ночью по пустой дороге, наложены черно-белый фильтр и фильтр блюра"
+            class="card__img"
+            loading="lazy"
+          />
           <span class="card__watermark">care</span>
         </div>
         <div class="card__desc">
@@ -299,13 +327,14 @@
             хз.......
           </p>
           <div class="card__desc-buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
                 height="36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -334,16 +363,21 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
       </section>
       <section class="card container">
-        <h3 class="card__title">3 спринт: Обходные стратегии</h3>
+        <h2 class="card__title">3 спринт: Обходные стратегии</h2>
         <div class="card__img-container">
-          <img src="./images/card_img.jpg" alt="" class="card__img" />
+          <img
+            src="./images/card_img.jpg"
+            alt="Микроавтоубс двигается ночью по пустой дороге, наложен фильтр инвертирования цветов изображения на 75%"
+            class="card__img"
+            loading="lazy"
+          />
           <span class="card__watermark">&lt;support&gt;</span>
         </div>
         <div class="card__desc">
@@ -357,13 +391,14 @@
             решила ни за что не буду менять когорту - села за проект
           </p>
           <div class="card__desc-buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
                 height="36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -392,16 +427,21 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
       </section>
       <section class="card container">
-        <h3 class="card__title">3 спринт: Когда опускаются руки</h3>
+        <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
         <div class="card__img-container">
-          <img src="./images/card_img.jpg" alt="" class="card__img" />
+          <img
+            src="./images/card_img.jpg"
+            alt="Микроавтоубс двигается ночью по пустой дороге, наложен фильтр изменения цветов изображения"
+            class="card__img"
+            loading="lazy"
+          />
           <span class="card__watermark">&lt;lifes-style: none;&gt;</span>
         </div>
         <div class="card__desc">
@@ -414,13 +454,14 @@
           </p>
           <p class="card__desc-paragraph">Мне понравился проект, сложно...</p>
           <div class="card__desc-buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
                 height="36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -449,16 +490,21 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
       </section>
       <section class="card container">
-        <h3 class="card__title">«Сейчас я здесь»</h3>
+        <h2 class="card__title">«Сейчас я здесь»</h2>
         <div class="card__img-container">
-          <img src="./images/card_img.jpg" alt="" class="card__img" />
+          <img
+            src="./images/card_img.jpg"
+            alt="Микроавтоубс двигается ночью по пустой дороге, наложены фильтр изменения цветов изображения и фильтр насыщенности"
+            class="card__img"
+            loading="lazy"
+          />
           <span class="card__watermark">&lt;experience&gt;</span>
         </div>
         <div class="card__desc">
@@ -474,13 +520,14 @@
             Это очень и очень сложно. Что же будет дальше?
           </p>
           <div class="card__desc-buttons">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
                 height="36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -509,7 +556,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="button" class="card__like-button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -532,17 +579,17 @@
         <span class="button__text">Сохранить на память</span>
       </button>
       <dialog id="dialog-id" class="dialog">
-        <div class="dialog__window">
-          <div class="dialog__window-insert-disk">
-            <div class="svg-container">
-              <svg class="dialog__window-insert-disk-svg" fill="none">
-                <use href="./svg/save-dialog.svg#save-dialog"></use>
-              </svg>
-            </div>
-            <span class="dialog__window-insert-disk-text"
-              >Вставьте дискету, чтобы продолжить</span
-            >
+        <div class="dialog__insert-disk">
+          <div class="svg-container">
+            <svg class="dialog__insert-disk-svg" fill="none">
+              <use href="./svg/save-dialog.svg#save-dialog"></use>
+            </svg>
           </div>
+          <span class="dialog__insert-disk-text"
+            >Вставьте дискету, чтобы продолжить</span
+          >
+        </div>
+        <form method="dialog">
           <button
             class="dialog__close"
             type="button"
@@ -550,8 +597,7 @@
           >
             <span class="button__text">ok</span>
           </button>
-          <button class="close-button visually-hidden">Закрыть окно</button>
-        </div>
+        </form>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>

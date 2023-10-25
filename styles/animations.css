@@ -12,3 +12,126 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@-webkit-keyframes moveLeftRight {
+  0% {
+    left: -25px;
+  }
+
+  100% {
+    left: -21px;
+  }
+}
+
+@keyframes moveLeftRight {
+  0% {
+    left: -25px;
+  }
+
+  100% {
+    left: -21px;
+  }
+}
+
+.core {
+  transition: 0.03s linear;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--accent-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:active .core {
+  fill: var(--heart-color);
+  transition: fill 0.3s linear;
+}
+
+.main-body {
+  transition: 0.3s linear;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--accent-color);
+  transition: 0.3s 0.05s linear;
+}
+
+.like-icon:active .main-body {
+  fill: var(--heart-color);
+  transition: 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--heart-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-color);
+  transition: fill 0.3s linear;
+}
+
+.contour {
+  fill: var(--accent-color);
+  transition: fill 0.1s linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-color);
+  transition: fill 0.3s 0.6s linear;
+}
+
+.like-icon.is-liked .heart {
+  transform-origin: center center;
+  -webkit-animation: animHeart 0.3s 0.1s ease-in alternate;
+  animation: animHeart 0.3s 0.1s ease-in alternate;
+}
+
+@-webkit-keyframes animHeart {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes animHeart {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.like-icon.is-liked .sparks {
+  -webkit-animation: animSparks 0.3s 0.3s ease-in alternate;
+  animation: animSparks 0.3s 0.3s ease-in alternate;
+}
+
+@-webkit-keyframes animSparks {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animSparks {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
